@@ -19,9 +19,7 @@ BEGIN {SarahRevere}
       THEN
         IF I > 1
         THEN
-          IF (Query[I] = '1') OR (Query[I] = '2')
-          THEN
-            Lanterns := Query[I];
+          Lanterns := Query[I];
     END;
 
   IF (Lanterns > '0') AND (Lanterns < '3')
