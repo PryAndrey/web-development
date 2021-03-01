@@ -11,9 +11,9 @@ BEGIN
   IF (Length(Query) > 0)
   THEN
     BEGIN
-      NameOfParametr := POS('name', Query);
-      IF NameOfParametr = 1
-      THEN
+      NameOfParametr := Copy(Query, 1, 5);
+      IF NameOfParametr = 'name='
+      THEN 
         BEGIN
           FOR I := POS('=', Query) + 1 TO Length(Query)
           DO
