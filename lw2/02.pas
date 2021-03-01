@@ -10,7 +10,7 @@ BEGIN {SarahRevere}
   Query := GetEnv('QUERY_STRING');
   Lanterns := '-';
 
-  IF (Length(Query) > 0)
+  IF (Query = 'lanterns')
   THEN
     BEGIN
       I := POS('=', Query) + 1;

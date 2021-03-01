@@ -1,10 +1,10 @@
-PROGRAM PaulRevere(INPUT, OUTPUT);
+PROGRAM SarahRevere(INPUT, OUTPUT);
 USES DOS;
 VAR
   Query: STRING;
   Lanterns: CHAR;
   I: INTEGER;
-BEGIN {PaulRevere}
+BEGIN {SarahRevere}
   WRITELN('Content-Type: text/plain');
   WRITELN;
   Query := GetEnv('QUERY_STRING');
@@ -25,10 +25,11 @@ BEGIN {PaulRevere}
     IF Lanterns = '1'
     THEN
       WRITELN('land.')
-    ELSE IF Lanterns = '2'
-    THEN
-      WRITELN('sea.')
+    ELSE
+      IF Lanterns = '2'
+      THEN
+        WRITELN('sea.')
   ELSE
     WRITELN('The North Church shows only''', Lanterns, '''.');
-END. {PrintHello}
+END. {SarahRevere}
 
