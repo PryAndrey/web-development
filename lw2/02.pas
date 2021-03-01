@@ -3,20 +3,25 @@ USES DOS;
 VAR
   Query: STRING;
   Lanterns: CHAR;
-  I: INTEGER;
+  Name, I: INTEGER;
 BEGIN {SarahRevere}
   WRITELN('Content-Type: text/plain');
   WRITELN;
   Query := GetEnv('QUERY_STRING');
   Lanterns := '-';
 
-  IF (Query = 'lanterns')
+  IF (Length(Query) > 0)
   THEN
     BEGIN
       I := POS('=', Query) + 1;
-      IF I > 1
+      Name := POS('lanterns=', Query);
+      IF Name = '1'
       THEN
-        Lanterns := Query[I];
+        IF I > 1
+        THEN
+          IF (Query[I] = '1') OR (Query[I] = '2')
+          THEN
+            Lanterns := Query[I];
     END;
 
   IF (Lanterns > '0') AND (Lanterns < '3')
@@ -32,4 +37,6 @@ BEGIN {SarahRevere}
   ELSE
     WRITELN('The North Church shows only''', Lanterns, '''.');
 END. {SarahRevere}
+
+
 
