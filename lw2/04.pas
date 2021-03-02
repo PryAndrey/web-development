@@ -4,7 +4,7 @@ USES DOS;
 FUNCTION GetQueryStringParameter(Key: STRING): STRING;
 VAR
   Query, Value: STRING;
-  KeyPos, I: INTEGER;
+  I: INTEGER;
 BEGIN
   Value := '';
   Query := GetEnv('QUERY_STRING');
@@ -14,7 +14,7 @@ BEGIN
   THEN
     BEGIN
       I := POS(Key, Query) + Length(Key);
-      WHILE (I < Length(Query) + 1) AND (Query[I] <> '&')
+      WHILE (I <= Length(Query)) AND (Query[I] <> '&')
       DO
         BEGIN
           Value := Value + Query[I];
