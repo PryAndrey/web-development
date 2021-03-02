@@ -8,18 +8,18 @@ VAR
 BEGIN
   Value := '';
   Query := GetEnv('QUERY_STRING');
+  Key := Concat(Key, '=');
   I := POS(Key, Query);
   IF I > 0
   THEN
     BEGIN
-      KeyPos := POS(Key, Query) + Length(Key) + 1;
-      I := KeyPos;
-      WHILE (I < Length(Query)) AND (Query[I] <> '&')
+      I := POS(Key, Query) + Length(Key);
+      WHILE (I < Length(Query) + 1) AND (Query[I] <> '&')
       DO
         BEGIN
           Value := Value + Query[I];
           I := I + 1
-        END;
+        END
     END;
   GetQueryStringParameter := Value
 END;
@@ -32,3 +32,4 @@ BEGIN {QueryFetch}
   WRITELN('Last Name: ', GetQueryStringParameter('last_name'));
   WRITELN('Age: ', GetQueryStringParameter('age'))
 END. {QueryFetch}
+
