@@ -1,7 +1,7 @@
 <?php 
 if(empty($_GET['text'])) exti('Empty input string.');
 $text = $_GET['text'];
-if(!preg_match('/^[a-zA-Z0-9]+/', $text)) exit('Password can contain only alphabetical letters and numbers.');
+if(!preg_match('/^[a-zA-Z0-9]+$/', $text)) exit('Password can contain only alphabetical letters and numbers.');
 $len = strlen($text);
 $charsUsed = array();
 $charsUsedAgain = array();
@@ -25,9 +25,11 @@ for ($i=0; $i<$len; $i++)
 $strength = 0;
 $strength += 4 * $len;
 $strength += 4 * $digits;
-$strength += 2 * ($len - $upreg);
-$strength += 2 * ($len - $downreg);
+if($upreg != 0) $strength += 2 * ($len - $upreg);
+if($downreg != 0) $strength += 2 * ($len - $downreg);
 if($digits < 1) $strength -= $len;
 if($digits == $len) $strength -= $len;
+
 $strength -= $repeated;
 echo('Strength '.$strength);
+?>
