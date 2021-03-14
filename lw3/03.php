@@ -32,5 +32,5 @@ if($digits < 1) $strength -= $len;
 if($digits == $len) $strength -= $len;
 
 $strength -= $repeated;
-echo('Strength '.$strength);
+echo('Strength: '.$strength);
 ?>
