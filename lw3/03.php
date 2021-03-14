@@ -1,4 +1,5 @@
 <?php 
+header("Content-Type: text/plain");
 if(empty($_GET['text'])) exti('Empty input string.');
 $text = $_GET['text'];
 if(!preg_match('/^[a-zA-Z0-9]+$/', $text)) exit('Password can contain only alphabetical letters and numbers.');
