@@ -1,6 +1,6 @@
 <?php
-  $text = $_GET["text"];
-  $text = preg_replace('/\s+/', ' ', $text);
   header("Content-Type: text/plain");
-  echo trim($text); 
+  $text = $_GET["text"];
+  $text = trim($text);  
+  echo preg_replace('/\s+/', ' ', $text); 
 ?>

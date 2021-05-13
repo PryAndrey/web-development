@@ -1,16 +1,19 @@
-PROGRAM HelloFriend(INPUT, OUTPUT);
+PROGRAM PrintHello(INPUT, OUTPUT);
 USES DOS;
 VAR
   Query, Name: STRING;
   I: INTEGER;
-BEGIN
+BEGIN {PaulRevere}
   WRITELN('Content-Type: text/html');
   WRITELN;
+
   Query := GetEnv('QUERY_STRING');
+  //WRITELN(Query);
 
   IF (Length(Query) > 0)
   THEN
     BEGIN
+    //WRITELN(Query);
       FOR I := POS('=', Query) + 1 TO Length(Query)
       DO
         Name := CONCAT(Name, Query[I]);
@@ -18,5 +21,5 @@ BEGIN
     END
   ELSE
     WRITELN('Hello Anonymous!')
-END.
+END. {PrintHello}
 
