@@ -27,7 +27,7 @@
   padding: 15px 20px;
   display: block;
   line-height: 42px;
-  font: 19px Georgia;
+  font: 19px "Georgia";
   color: #333333;
   display: flex;
   flex-direction: row;
@@ -43,7 +43,7 @@
 .header__btn-icon--first
 {
   margin-right: 5px;
-  background: url("img/aboutme_icon1.png") no-repeat;
+  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/aboutme_icon1.png") no-repeat;
   width: 20px;
   height: 20px;
 }
@@ -51,7 +51,7 @@
 .header__btn-icon--second
 {
   margin-right: 5px;
-  background: url("img/hobby_icon1.png") no-repeat;
+  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/hobby_icon1.png") no-repeat;
   width: 20px;
   height: 20px;
 }
@@ -59,33 +59,32 @@
 .header__btn-icon--third
 {
   margin-right: 5px;
-  background: url("img/favfilms_icon1.png") no-repeat;
+  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/favfilms_icon1.png") no-repeat;
   width: 20px;
   height: 20px;
 }
 
 .btn-menu:hover .header__btn-icon--first
 {
-  background: url("img/aboutme_icon2.png") no-repeat;
+  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/aboutme_icon2.png") no-repeat;
 }
 
 .btn-menu:hover .header__btn-icon--second
 {
-  background: url("img/hobby_icon2.png") no-repeat;
+  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/hobby_icon2.png") no-repeat;
 }
 
 .btn-menu:hover .header__btn-icon--third
 {
-  background: url("img/favfilms_icon2.png") no-repeat;
+  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/favfilms_icon2.png") no-repeat;
 }
 
 .top-image
 {
   height: 400px;
-  margin: 0px auto;
-  position: relative;
+  margin: 0 auto;
   overflow: hidden;
-  background: url("img/top.png") no-repeat;
+  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/top.png") no-repeat;
   background-size: cover;
 }
 
@@ -94,7 +93,7 @@
   margin-top: -190px;
   display: flex;
   justify-content: center;
-  padding: 0 20px 40px 20px;
+  padding: 0 20px 40px
   position: relative;
 }
 
@@ -148,14 +147,14 @@
 .info-list__list-element--first
 {
   margin-top: 15px;
-  font: 19px Georgia;
+  font: 19px "Georgia";
   color: #555555;
 }
 
 .info-list__list-element--second
 {
   margin: 13px 0 0 -20px;
-  font: 19px Georgia;
+  font: 19px "Georgia";
   color: #555555;
 }
 
@@ -174,7 +173,7 @@
 .quote-block__blockquote
 {
   color: #ffffff;
-  font: italic  28px/42px Georgia;
+  font: italic 28px/42px "Georgia";
   padding: 25px 0 0 4px;
   width: 90%;
 }
@@ -212,7 +211,7 @@
 
 .text__list-paragraph
 {
-  font: 19px/33px Georgia;
+  font: 19px/33px "Georgia";
   color: #555555;
   margin-top: 15px;
   width: 93%;
@@ -231,7 +230,7 @@
   margin-top: 30px;
   text-decoration: none;
   color: #15a98b;
-  font: 19px Georgia;
+  font: 19px "Georgia";
 }
 
 .right-column__write-me:hover
@@ -299,7 +298,7 @@
 .film-point__text
 {
   margin-top: -4px;
-  font: 16px/28px Georgia;
+  font: 16px/28px "Georgia";
 }
 
 .container__btn-all-films
@@ -475,7 +474,7 @@
 {
   appearance: none;
   overflow: hidden;
-  background: url('img/arrow.png') no-repeat right;
+  background: url('H:/10_klass/Web/web-development/web-development/lw5/final/img/arrow.png') no-repeat right;
 }
 
 .field-comment__input
