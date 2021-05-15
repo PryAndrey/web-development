@@ -1,0 +1,172 @@
+@font-face
+{
+    font-family: OpenSansSemibold;
+    src: url("../fonts/opensans_semibold.ttf");
+}
+
+@font-face
+{
+    font-family: OpenSansBold;
+    src: url("../fonts/opensans_bold.ttf");
+}
+@font-face
+{
+    font-family: OpenSansRegular;
+    src: url("../fonts/opensans_regular.ttf");
+}
+
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 22px;
+    margin-left: 20px;
+}
+.upper-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 960px;
+    height: 350px;
+    margin-bottom: 60px;
+}
+
+.lower-container
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 960px;
+    margin-right: 22px;
+    margin-left: 20px;
+}
+
+.img-item
+{
+    border-radius: 5px;
+}
+
+.quote
+{
+    font: italic 28px Georgia;
+    color: #8e8e8e;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    padding: 0;
+    width: 440px;
+    position: relative;
+    top: -14px;
+}
+.quotes-author
+{
+    font: normal 16px Georgia;
+    margin-top: 0;
+    margin-bottom: 155px;
+    margin-left: 60px;
+    padding: 0;
+    width: 440px;
+}
+.favourites
+{
+    font: normal 22px OpenSansSemibold;
+    color: #15a98c;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.favourite-element
+{
+    font: normal 18px Georgia;
+    margin-bottom: 15px;
+}
+
+.first-heading
+{
+    font: normal 40px OpenSansBold;
+    margin: 0;
+    padding: 0;  
+}
+
+.second-heading
+{
+    font-family: OpenSansRegular;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.text
+{
+    font: normal 20px/1.8 Georgia;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.green-line
+{
+    margin-top: 24px;
+    margin-bottom: 50px;
+    width: 60px;
+    height: 6px;
+    background: #45c3aa;
+    border-radius: 6px/6px;
+}
+
+.write-me
+{
+    font-size: 18px;
+    color: #15a98b;
+}
+.write-me:hover
+{
+    font: normal 18px serif;
+    color: #098d72;
+}
+
+.quote-block
+{
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.list-block
+{
+    width: 330px;
+    margin-right: 60px;
+}
+
+.info-block
+{
+    width: 570px;
+}
+
+.underlined-text
+{
+    text-decoration: underline;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    padding-left: 18px;
+}
+
+ol
+{
+    margin: 0;
+    padding: 0;
+    padding-left: 18px;
+}

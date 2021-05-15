@@ -1,0 +1,135 @@
+.page {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.logo-image {
+  display: block;
+}
+
+.sidebar {
+  flex: 0 0 330px;
+}
+
+.content {
+  flex: 0 0 570px;
+  margin-left: 60px;
+}
+
+.citation {
+  height: 220px;
+  padding-top: 60px;
+}
+
+.quote {
+  font-size: 28px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #848484;
+}
+
+.autor {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+.fav {
+  margin-top: 50px;
+}
+
+.fav-item {
+  margin-bottom: 55px;
+}
+
+.fav-header {
+  color: #15a98b;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.fav-list {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.fav-list li {
+  margin-top: 15px;
+  font-size: 19px;
+  font-family: Georgia, sans-serif;
+  color: #555555;
+}
+
+.about {
+  margin-top: 120px;
+}
+
+h1 {
+  font-size: 48px;
+  padding-left: 5px;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: bold;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+
+h1::after {
+  margin-top: 30px;
+  margin-left: -5px;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #45c3aa;
+}
+
+p {
+  font-size: 19px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 32px;
+  color: #555555;
+  margin-top: 30px;
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+
+.mail-link {
+  display: inline-block;
+  margin-top: 55px;
+  text-decoration: none;
+  color: #15a98b;
+  font-size: 19px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.mail-link span {
+  text-decoration: underline;
+}
+
+.mail-link:hover {
+  text-decoration: none;
+}
+
+.mail-link:hover span {
+  text-decoration: none;
+}
