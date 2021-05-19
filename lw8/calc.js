@@ -1,38 +1,54 @@
 function calc(calcStr) {
     calcStr = calcStr.replace(/[()]/g, ' ');
     calcStr = calcStr.replace(/\s+/g, ' ').trim();
-    let tokens = calcStr.split(' ');
-    
-    let i = 0;
-    let computeFail = false;
-    let invalState = false;
-    let invalFormat = true;
+    var tokens = calcStr.split(' ');
 
-    for (let k = 0; k < tokens.length; k++) {
-        if (!((isFinite(tokens[k])) ||
-             ['*', '/', '+', '-'].includes(tokens[i]))) {
-            invalFormat = false;
+    var error = checkValidity(tokens);
+	if(error == 0)
+		error = process(tokens);
+
+    if (error == 1) {
+        console.log('Ошибка: недостающие данные');
+    } else if (error == 2) {
+        console.log('Ошибка: некорректно введенные данные');
+    }  else if (error == 3) {
+        console.log('Ошибка: попытка деления на ноль');
+    } else {
+        tokens = parseFloat(tokens);
+        console.log(tokens);
+    }        
+    
+}
+
+function checkValidity(tokens)
+{
+	if(tokens.length < 3) return false;
+	for (let k = 0; k < tokens.length; k++) {
+        if ((!isNaN(tokens[k])) && (!(["*", "/", "+", "-"].includes(tokens[k])))) {
+            return false;
         } 
     }
+	return true;
+}
 
-    while (tokens.length > 1) {
-        if (!invalFormat) {
-            break;
-        }
-
+function process(tokens)
+{
+	var i = 0;
+	while (tokens.length > 1) {
         if (tokens.length < 3)  {
-            invalState = true;
-            break;
+            return 1;
         }
 
-        if (['*', '/', '+', '-'].includes(tokens[i]) &&
-             isFinite(tokens[i + 1]) && 
-             isFinite(tokens[i + 2]) ) {
+        if (i > tokens.length - 2)  {
+			return 2;
+        }
+
+        if (["*", "/", "+", "-"].includes(tokens[i]) && isNaN(tokens[i + 1]) && isNaN(tokens[i + 2]) ) {
             tokens[i] = compute(tokens[i], tokens[i + 1], tokens[i + 2]);
             
+				console.log(tokens[i]);
             if (tokens[i] == 'Infinity') {
-                computeFail = true;
-                break;
+                return 3;
             }
             
             delete tokens[i + 1];
@@ -43,44 +59,35 @@ function calc(calcStr) {
             tokens.pop();
             tokens.pop();
 
-            i = 0;
+            i = 0; 
         } else {
             i++;
         }
     }
-
-    if (invalState) {
-        console.log('Ошибка: недостающие данные');
-    } else if (!invalFormat) {
-        console.log('Ошибка: некорректно введенные данные');
-    }  else if (computeFail) {
-        console.log('Ошибка: попытка деления на ноль');
-    } else {
-        tokens = parseFloat(tokens);
-        console.log(tokens);
-    }        
-    
 }
 
 function compute(operator, firstOperand, secondOperand) {
     switch(operator) {
-        case '/' : {
+        case "/" : 
+			if(secondOperand == 0) return 'Infinity';
             firstOperand = parseFloat(firstOperand) / parseFloat(secondOperand);
-            break
-        }
-        case '*' : {
+            break;
+        
+        case "*" : 
             firstOperand = parseFloat(firstOperand) * parseFloat(secondOperand);
-            break
-        }
-        case '+' : {
+            break;
+        
+        case "+" : 
             firstOperand = parseFloat(firstOperand) + parseFloat(secondOperand);
-            break
-        }
-        case '-' : {
+            break;
+        
+        case "-" : 
             firstOperand = parseFloat(firstOperand) - parseFloat(secondOperand);
-            break
-        }
+            break;
+        
     }
     firstOperand = firstOperand.toString();
     return firstOperand;
 } 
+
+

@@ -43,7 +43,7 @@
 .header__btn-icon--first
 {
   margin-right: 5px;
-  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/aboutme_icon1.png") no-repeat;
+  background: url("../img/aboutme_icon1.png") no-repeat;
   width: 20px;
   height: 20px;
 }
@@ -51,7 +51,7 @@
 .header__btn-icon--second
 {
   margin-right: 5px;
-  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/hobby_icon1.png") no-repeat;
+  background: url("../img/hobby_icon1.png") no-repeat;
   width: 20px;
   height: 20px;
 }
@@ -59,24 +59,24 @@
 .header__btn-icon--third
 {
   margin-right: 5px;
-  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/favfilms_icon1.png") no-repeat;
+  background: url("../img/favfilms_icon1.png") no-repeat;
   width: 20px;
   height: 20px;
 }
 
 .btn-menu:hover .header__btn-icon--first
 {
-  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/aboutme_icon2.png") no-repeat;
+  background: url("../img/aboutme_icon2.png") no-repeat;
 }
 
 .btn-menu:hover .header__btn-icon--second
 {
-  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/hobby_icon2.png") no-repeat;
+  background: url("../img/hobby_icon2.png") no-repeat;
 }
 
 .btn-menu:hover .header__btn-icon--third
 {
-  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/favfilms_icon2.png") no-repeat;
+  background: url("../img/favfilms_icon2.png") no-repeat;
 }
 
 .top-image
@@ -84,7 +84,7 @@
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
-  background: url("H:/10_klass/Web/web-development/web-development/lw5/final/img/top.png") no-repeat;
+  background: url("../img/top.png") no-repeat;
   background-size: cover;
 }
 
@@ -474,7 +474,7 @@
 {
   appearance: none;
   overflow: hidden;
-  background: url('H:/10_klass/Web/web-development/web-development/lw5/final/img/arrow.png') no-repeat right;
+  background: url('../img/arrow.png') no-repeat right;
 }
 
 .field-comment__input
