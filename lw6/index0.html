@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"/>
-    <title>Page about me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page about me</title>
   </head>
   <body>
     <div class="page-about">
@@ -41,7 +42,7 @@
           </div>
           <div class="left-column__info-block">
             <div class="info-block__info-point">
-              <h2 class="info-point__info-header">Любимые писатели:</h2>
+              <h2 class="info-point__info-header--first">Любимые писатели:</h2>
               <ul class="info-point__info-list">
                 <li class="info-list__list-element--first">Айзек Азимов</li>
                 <li class="info-list__list-element--first">Говард Лавкрафт</li>
@@ -50,7 +51,7 @@
               </ul>
             </div>
             <div class="info-block__info-point">
-              <h2 class="info-point__info-header">Любимые фильмы</h2>
+              <h2 class="info-point__info-header--second">Любимые фильмы</h2>
               <ul class="info-point__info-list info-point_info-list--numbers">
                 <ul class="info-list__list-element--second"><span>1.</span> Шоу Трумэна</ul>
                 <ul class="info-list__list-element--second"><span>2.</span> Малхолланд Драйв</ul>
@@ -201,7 +202,7 @@
 
               <div class="form__field">
                 <label class="field__label" for="country">Откуда вы?</label>
-                <select class="field__select field__input" type="Откуда вы?" id="country" name="country">
+                <select class="field__select field__input country" type="Откуда вы?" id="country" name="country">
                   <option value="Россия">Россия</option>
                   <option value="США">США</option>
                   <option value="Австралия">Австралия</option>
@@ -217,14 +218,14 @@
               <div class="form__field-sex">
                 <label class="field__label" for="sex">Ваш пол</label>
                 <div class="field-sex__pos">
-                  <div>
-		    <input name="sex" id="man" type="radio" value="man"/>
-		    <label class="field__label" for="man">Мужской</label>
-		   </div>
-                   <div>
-		     <input name="sex" id="woman" type="radio" value="woman"/>
-		     <label class="field__label" for="woman">Женский</label>
-		   </div>
+                  <div class="field-sex__pos--div">
+		           <input name="sex" id="man" class="man" type="radio" value="man"/>
+		           <label class="field__label" for="man">Мужской</label>
+		          </div>
+                  <div class="field-sex__pos--div">
+		           <input name="sex" id="woman" class="woman" type="radio" value="woman"/>
+		           <label class="field__label" for="woman">Женский</label>
+		          </div>
                 </div>
               </div>
 
