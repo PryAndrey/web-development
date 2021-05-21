@@ -1,676 +1,28 @@
-@media (max-width: 980px)
-{
-.page-about
-{
-  margin: 0 auto;
-}
-
-.header
-{
-  width: 100%;
-  padding: 0 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.header__list
-{
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  min-width: 96px;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-.btn-menu
-{
-  text-decoration: none;
-  padding: 15px 20px;
-  display: block;
-  line-height: 42px;
-  font: 19px "Georgia";
-  color: #333333;
-  display: flex;
-  flex-direction: row;
-}
-
-.btn-menu:hover
-{
-  background-color: #15a98c;
-  color: white;
-}
-
-
-.header__btn-icon--first
-{
-  margin-right: 5px;
-  background: url("H:/10_klass/Web/web-development/lw6/img/aboutme_icon1.png") no-repeat;
-  width: 20px;
-  height: 20px;
-}
-
-.header__btn-icon--second
-{
-  margin-right: 5px;
-  background: url("H:/10_klass/Web/web-development/lw6/img/hobby_icon1.png") no-repeat;
-  width: 20px;
-  height: 20px;
-}
-
-.header__btn-icon--third
-{
-  margin-right: 5px;
-  background: url("H:/10_klass/Web/web-development/lw6/img/favfilms_icon1.png") no-repeat;
-  width: 20px;
-  height: 20px;
-}
-
-.btn-menu:hover .header__btn-icon--first
-{
-  background: url("H:/10_klass/Web/web-development/lw6/img/aboutme_icon2.png") no-repeat;
-}
-
-.btn-menu:hover .header__btn-icon--second
-{
-  background: url("H:/10_klass/Web/web-development/lw6/img/hobby_icon2.png") no-repeat;
-}
-
-.btn-menu:hover .header__btn-icon--third
-{
-  background: url("H:/10_klass/Web/web-development/lw6/img/favfilms_icon2.png") no-repeat;
-}
-
-.top-image
-{
-  height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  background: url("H:/10_klass/Web/web-development/lw6/img/top.png") no-repeat;
-  background-size: cover;
-}
-
-.about-me
-{
-  display: flex;
-  justify-content: center;
-  padding: 0 20px 40px;
-  position: relative;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: -190px;
-}
-
-.about-me__left-column
-{
-  flex: 0 0 330px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-.about-me__right-column
-{
-  flex: 0 0 600px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 50%;
-}
-
-.left-column__logo
-{
-  float: right;
-  margin-bottom: 50px;
-}
-
-.logo__logo-image
-{
-  display: block;
-  width: 330px;
-  border-radius: 5px;
-}
-
-.left-column__info-block
-{
-  margin-left: 40px;
-  flex: 1;
-  flex-direction: column;
-  display: flex;
-}
-
-.info-block__info-point
-{
-  margin-bottom: 50px;
-  flex: 1;
-}
-
-.info-point__info-header
-{
-  color: #15a98b;
-  font: 600 24px/24px "Open Sans", sans-serif;
-  margin-top: 0;
-}
-
-.info-point__info-list
-{
-  margin-top: 22px;
-  padding-left: 22px;
-}
-
-.info-list__list-element--first
-{
-  margin-top: 15px;
-  font: 19px "Georgia";
-  color: #000000;
-}
-
-.info-list__list-element--second
-{
-  margin: 13px 0 0 -20px;
-  font: 19px "Georgia";
-  color: #000000;
-}
-
-.info-point__info-list--numbers
-{
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.right-column__quote-block
-{
-  padding-top: 0;
-}
-
-.quote-block__blockquote
-{
-  color: #555555;
-  font: italic 25px/42px "Georgia";
-  padding: 25px 0 0 4px;
-  width: 90%;
-}
-
-.quote-block__autor
-{
-  color: #555555;
-  margin: 1px 0 0 6px;
-  font: 600 16px/42px "Open Sans", sans-serif;
-}
-
-.right-column__text
-{
-  margin-top: -18px;
-}
-
-.text__title
-{
-  padding-left: 5px;
-  color: #333333;
-  margin-bottom: 45px;
-  font: bold 48px/42px "Open Sans", sans-serif;
-}
-
-.text__title::after
-{
-  margin: 30px 0 0 -5px;
-  content: "";
-  display: block;
-  width: 60px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #45c3aa;
-}
-
-.text__list-paragraph
-{
-  font: 19px/33px "Georgia";
-  color: #555555;
-  margin-top: 17px;
-  width: 93%;
-}
-
-.text__second-title
-{
-  margin: 42px 0 0 0;
-  padding-left: 0;
-  font: 36px/42px "Open Sans", sans-serif;
-}
-
-.right-column__write-me
-{
-  display: inline-block;
-  margin: 30px 0 auto;
-  text-decoration: none;
-  color: #15a98b;
-  font: 19px "Georgia";
-  width: 150px;
-}
-
-.right-column__write-me:hover
-{
-  text-decoration: none;
-}
-
-.right-column__write-me span
-{
-  text-decoration: underline;
-}
-
-.right-column__write-me:hover span
-{
-  text-decoration: none;
-}
-
-.page-films
-{
-  margin: 16px auto 0;
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-}
-
-.page-films__container
-{
-  width: 1200px;
-  margin-left: -33px;
-  margin: 0 auto;
-}
-
-.container__title
-{
-  font: 36px/42px "Open Sans", sans-serif;
-  margin: 36px 0 36px 16%;
-}
-
-.container__info-films
-{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.container__info-films--second
-{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex: 1;
-  min-width: 70%;
-  margin: 0 auto;
-}
-
-.container__info-films--first
-{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex: 1;
-  min-width: 70%;
-  margin: 0 auto;
-}
-
-.info-films__film-point
-{
-  flex: 1;
-  margin: 0 auto;
-  min-height: 500px;
-  max-width: 300px;
-}
-
-.film-point__image
-{
-  height: 190px;
-  width: 285px;
-  background-position: center center;
-  border-radius: 5px;
-}
-
-.film-point__title
-{
-  margin-top: 25px;
-  font: bold 22px "Open Sans", sans-serif;
-  width: 50%;
-}
-
-.film-point__text
-{
-  margin-top: -4px;
-  font: 16px/28px "Georgia";
-  width: 100%;
-}
-
-.container__btn-all-films
-{
-  display: flex;
-  justify-content: center;
-  margin: 30px 20px 20px 0;
-}
-
-.btn-all-films__btn
-{
-  background-color: #15a98c;
-  font-weight: normal;
-  line-height: 1.25;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px;
-  padding: 7px 53px;
-  border-radius: 4px;
-}
-
-.btn-all-films__btn:hover
-{
-  background-color: #109387;
-}
-
-.btn__text
-{
-  font: 19px/32px "Georgia";
-  color: white;
-  margin: 0;
-}
-
-.page-write-me
-{
-  margin: 20px auto 0;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-
-.page-write-me__block
-{
-  width: 960px;
-  height: 940px;
-  display: flex;
-  flex-direction: column;
-  margin-left: -25px;
-}
-
-.block__header
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 13px;
-}
-
-.header__line
-{
-  border: none;
-  background-color: #c4c4c4;
-  color: #c4c4c4;
-  height: 1px;
-  flex: 0 0 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.header__title
-{
-  text-transform: uppercase;
-  font: 100 30px/42px "Open Sans", sans-serif;
-  text-align: center;
-  margin-top: 20px;
-  flex: 0 0 300px;
-}
-
-.block__form
-{
-  margin-top: 13px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.field__label
-{
-  display: block;
-  font: 20px/32px "Open Sans", sans-serif;
-  margin-bottom: 5px;
-  color: #333333;
-}
-
-.form__field
-{
-  margin-top: 23px;
-}
-
-.field__input
-{
-  border: 2px solid #c9c9c9;
-  width: 100%;
-  height: 50px;
-  padding-left: 18px;
-  border-radius: 3px;
-}
-
-.field__input:focus
-{
-  border: 3px solid #15a98c;
-  border-radius: 3px;
-  outline: 0;
-}
-
-.label__star
-{
-  color: #ee0707;
-  font-weight: bold;
-}
-
-#man
-{
-  margin: 10px 10px 0 0;
-}
-
-#woman
-{
-  margin: 10px 10px 0 40px;
-}
-
-.field__select
-{
-  font: 18px/32px "Open Sans", sans-serif;
-  color: #333333;
-  width: 100%;
-  height: 50px;
-  border: 2px solid #c9c9c9;
-  border-radius: 3px;
-  padding-left: 10px;
-}
-
-.field__select:focus
-{
-  border: 3px solid #15a98c;
-  outline: 0;
-  border-radius: 3px;
-}
-
-.form__field-sex
-{
-  margin-top: 41px;
-}
-
-.field-sex__pos
-{
-  display: flex;
-}
-
-.field-sex__pos div
-{
-  font: 18px/32px "Open Sans", sans-serif;
-  color: #333333;
-  display: flex;
-  flex-direction: row;
-}
-
-#country
-{
-  appearance: none;
-  overflow: hidden;
-  background: url('H:/10_klass/Web/web-development/lw6/img/arrow.png') no-repeat right;
-}
-
-.field-comment__input
-{
-  font: 18px/32px "Open Sans", sans-serif;
-  color: #333333;
-  border: 2px solid #c9c9c9;
-  width: 100%;
-  height: 150px;
-  padding-left: 18px;
-  border-radius: 3px;
-}
-
-.form__field-comment
-{
-  margin-top: 41px;
-}
-
-.form__btn-container
-{
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 45px;
-}
-
-.btn-container__btn-form
-{
-  background-color: #15a98c;
-  font-weight: normal;
-  line-height: 1.25;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px;
-  padding: 7px 53px;
-  border-radius: 4px;
-  width: 220px;
-}
-
-.btn-container__btn-form:hover
-{
-  background-color: #109387;
-}
-}
-
-@media (min-width: 768px)
-{
-  .page-films
-  {
-    margin: 16px auto 0;
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-  }
-
-  .page-films__container
-  {
-    width: 1200px;
-    margin-left: -33px;
-  }
-
-  .container__title
-  {
-    font: 36px/42px "Open Sans", sans-serif;
-    margin: 36px 0 36px 35%;
-    max-width: 50%;
-  }
-
-  .container__info-films
-  {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .container__info-films--second
-  {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex: 1;
-    min-width: 70%;
-    margin: 0 auto;
-  }
-
-  .container__info-films--first
-  {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex: 1;
-    min-width: 70%;
-    margin: 0 auto;
-  }
-
-  .info-films__film-point
-  {
-    flex: 1;
-    margin: 0 auto;
-    min-height: 500px;
-    max-width: 300px;
-  }
-
-  .film-point__title
-  {
-    margin-top: 25px;
-    font: bold 22px "Open Sans", sans-serif;
-    width: 50%;
-  }
-
-  .film-point__text
-  {
-    margin-top: -4px;
-    font: 16px/28px "Georgia";
-    width: 100%;
-  }
-
-  .container__btn-all-films
-  {
-    display: flex;
-    justify-content: center;
-    margin: 30px 20px 20px 0;
-  }
-
-}
-
-
-@media (min-width: 1240px)
+@media (max-width: 979px)
 {
   .page-about
   {
     margin: 0 auto;
   }
-
+  
   .header
   {
-    height: 50px;
     width: 100%;
     padding: 0 20px;
     display: flex;
     justify-content: center;
   }
-
+  
   .header__list
   {
     list-style: none;
     display: flex;
     justify-content: flex-start;
-    min-width: 960px;
-    margin-left: -25px;
+    min-width: 96px;
+    flex-direction: column;
+    margin: 0 auto;
   }
-
+  
   .btn-menu
   {
     text-decoration: none;
@@ -682,164 +34,183 @@
     display: flex;
     flex-direction: row;
   }
-
+  
   .btn-menu:hover
   {
     background-color: #15a98c;
     color: white;
   }
-
-
+  
+  
   .header__btn-icon--first
   {
     margin-right: 5px;
-    background: url("H:/10_klass/Web/web-development/lw6/img/aboutme_icon1.png") no-repeat;
+    background: url("../img/aboutme_icon1.png") no-repeat;
     width: 20px;
     height: 20px;
   }
-
+  
   .header__btn-icon--second
   {
     margin-right: 5px;
-    background: url("H:/10_klass/Web/web-development/lw6/img/hobby_icon1.png") no-repeat;
+    background: url("../img/hobby_icon1.png") no-repeat;
     width: 20px;
     height: 20px;
   }
-
+  
   .header__btn-icon--third
   {
     margin-right: 5px;
-    background: url("H:/10_klass/Web/web-development/lw6/img/favfilms_icon1.png") no-repeat;
+    background: url("../img/favfilms_icon1.png") no-repeat;
     width: 20px;
     height: 20px;
   }
-
+  
   .btn-menu:hover .header__btn-icon--first
   {
-    background: url("H:/10_klass/Web/web-development/lw6/img/aboutme_icon2.png") no-repeat;
+    background: url("../img/aboutme_icon2.png") no-repeat;
   }
-
+  
   .btn-menu:hover .header__btn-icon--second
   {
-    background: url("H:/10_klass/Web/web-development/lw6/img/hobby_icon2.png") no-repeat;
+    background: url("../img/hobby_icon2.png") no-repeat;
   }
-
+  
   .btn-menu:hover .header__btn-icon--third
   {
-    background: url("H:/10_klass/Web/web-development/lw6/img/favfilms_icon2.png") no-repeat;
+    background: url("../img/favfilms_icon2.png") no-repeat;
   }
-
+  
   .top-image
   {
     height: 400px;
     margin: 0 auto;
     overflow: hidden;
-    background: url("H:/10_klass/Web/web-development/lw6/img/top.png") no-repeat;
+    background: url("../img/top.png") no-repeat;
     background-size: cover;
   }
-
+  
   .about-me
   {
-    margin-top: -190px;
     display: flex;
     justify-content: center;
     padding: 0 20px 40px;
     position: relative;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+	margin-top: -190px;
   }
-
+  
   .about-me__left-column
   {
     flex: 0 0 330px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
-
+  
   .about-me__right-column
   {
     flex: 0 0 600px;
-    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
   }
-
+  
   .left-column__logo
   {
     float: right;
     margin-bottom: 50px;
   }
-
+  
   .logo__logo-image
   {
     display: block;
     width: 330px;
     border-radius: 5px;
   }
-
-  .about-me__info-block
+  
+  .left-column__info-block
   {
-    margin-top: 7px;
-    float: left;
+    margin-left: 40px;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
   }
-
+  
   .info-block__info-point
   {
     margin-bottom: 50px;
+    flex: 1;
   }
-
-  .info-point__info-header
+  
+  .info-point__info-header--first
   {
     color: #15a98b;
     font: 600 24px/24px "Open Sans", sans-serif;
+    margin-top: 0;
   }
-
+  
+  .info-point__info-header--second
+  {
+    color: #15a98b;
+    font: 600 24px/24px "Open Sans", sans-serif;
+    margin-top: 0;
+  }
+  
   .info-point__info-list
   {
     margin-top: 22px;
     padding-left: 22px;
   }
-
+  
   .info-list__list-element--first
   {
     margin-top: 15px;
     font: 19px "Georgia";
-    color: #555555;
+    color: #000000;
   }
-
+  
   .info-list__list-element--second
   {
     margin: 13px 0 0 -20px;
     font: 19px "Georgia";
-    color: #555555;
+    color: #000000;
   }
-
+  
   .info-point__info-list--numbers
   {
     list-style-type: none;
     padding-left: 0;
   }
-
+  
   .right-column__quote-block
   {
-    height: 220px;
     padding-top: 0;
   }
-
+  
   .quote-block__blockquote
   {
-    color: #ffffff;
-    font: italic 28px/42px "Georgia";
+    color: #555555;
+    font: italic 25px/42px "Georgia";
     padding: 25px 0 0 4px;
     width: 90%;
   }
-
+  
   .quote-block__autor
   {
-    color: #f5f5f5;
+    color: #555555;
     margin: 1px 0 0 6px;
     font: 600 16px/42px "Open Sans", sans-serif;
   }
-
+  
   .right-column__text
   {
     margin-top: -18px;
   }
-
+  
   .text__title
   {
     padding-left: 5px;
@@ -847,7 +218,7 @@
     margin-bottom: 45px;
     font: bold 48px/42px "Open Sans", sans-serif;
   }
-
+  
   .text__title::after
   {
     margin: 30px 0 0 -5px;
@@ -858,7 +229,7 @@
     border-radius: 3px;
     background-color: #45c3aa;
   }
-
+  
   .text__list-paragraph
   {
     font: 19px/33px "Georgia";
@@ -866,38 +237,39 @@
     margin-top: 17px;
     width: 93%;
   }
-
+  
   .text__second-title
   {
     margin: 42px 0 0 0;
     padding-left: 0;
     font: 36px/42px "Open Sans", sans-serif;
   }
-
+  
   .right-column__write-me
   {
     display: inline-block;
-    margin-top: 30px;
+    margin: 30px 0 auto;
     text-decoration: none;
     color: #15a98b;
     font: 19px "Georgia";
+    width: 150px;
   }
-
+  
   .right-column__write-me:hover
   {
     text-decoration: none;
   }
-
+  
   .right-column__write-me span
   {
     text-decoration: underline;
   }
-
+  
   .right-column__write-me:hover span
   {
     text-decoration: none;
   }
-
+  
   .page-films
   {
     margin: 16px auto 0;
@@ -905,50 +277,56 @@
     display: flex;
     justify-content: center;
   }
-
+  
   .page-films__container
   {
-    width: 1200px;
-    margin-left: -33px;
+    width: 100%;
+    margin: 0 auto;
   }
-
+  
   .container__title
   {
     font: 36px/42px "Open Sans", sans-serif;
-    margin: 36px 10px;
+    margin: 36px 0 36px 16%;
   }
-
+  
   .container__info-films
   {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
   }
-
+  
   .container__info-films--second
   {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    min-width: auto;
-    flex: 600px 1 1;
+    flex-direction: column;
+    flex: 1;
+    min-width: 70%;
+    margin: 0 auto;
   }
-
+  
   .container__info-films--first
   {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    min-width: auto;
-    flex: 600px 1 1;
+    flex-direction: column;
+    flex: 1;
+    min-width: 70%;
+    margin: 0 auto;
   }
-
+  
   .info-films__film-point
   {
     flex: 1;
-    margin: 0 10px 10px;
+    margin: 0 auto;
+    min-height: 500px;
+    max-width: 300px;
   }
-
+  
   .film-point__image
   {
     height: 190px;
@@ -956,28 +334,28 @@
     background-position: center center;
     border-radius: 5px;
   }
-
+  
   .film-point__title
   {
     margin-top: 25px;
     font: bold 22px "Open Sans", sans-serif;
     width: 50%;
   }
-
+  
   .film-point__text
   {
     margin-top: -4px;
     font: 16px/28px "Georgia";
-    width: 90%;
+    width: 100%;
   }
-
+  
   .container__btn-all-films
   {
     display: flex;
     justify-content: center;
     margin: 30px 20px 20px 0;
   }
-
+  
   .btn-all-films__btn
   {
     background-color: #15a98c;
@@ -991,19 +369,19 @@
     padding: 7px 53px;
     border-radius: 4px;
   }
-
+  
   .btn-all-films__btn:hover
   {
     background-color: #109387;
   }
-
+  
   .btn__text
   {
     font: 19px/32px "Georgia";
     color: white;
     margin: 0;
   }
-
+  
   .page-write-me
   {
     margin: 20px auto 0;
@@ -1011,7 +389,7 @@
     display: flex;
     justify-content: center;
   }
-
+  
   .page-write-me__block
   {
     width: 960px;
@@ -1020,7 +398,7 @@
     flex-direction: column;
     margin-left: -25px;
   }
-
+  
   .block__header
   {
     display: flex;
@@ -1028,28 +406,27 @@
     justify-content: center;
     margin-right: 13px;
   }
-
+  
   .header__line
   {
-    width: 200px;
     border: none;
     background-color: #c4c4c4;
     color: #c4c4c4;
     height: 1px;
-    flex: 0 0 200px;
+    flex: 0 0 20px;
     margin: 0;
     padding: 0;
   }
-
+  
   .header__title
   {
     text-transform: uppercase;
-    font: 100 36px/42px "Open Sans", sans-serif;
+    font: 100 30px/42px "Open Sans", sans-serif;
     text-align: center;
     margin-top: 20px;
     flex: 0 0 300px;
   }
-
+  
   .block__form
   {
     margin-top: 13px;
@@ -1058,7 +435,7 @@
     flex-direction: column;
     align-items: center;
   }
-
+  
   .field__label
   {
     display: block;
@@ -1066,110 +443,110 @@
     margin-bottom: 5px;
     color: #333333;
   }
-
+  
   .form__field
   {
     margin-top: 23px;
   }
-
+  
   .field__input
   {
     border: 2px solid #c9c9c9;
-    width: 540px;
+    width: 100%;
     height: 50px;
     padding-left: 18px;
     border-radius: 3px;
   }
-
+  
   .field__input:focus
   {
     border: 3px solid #15a98c;
     border-radius: 3px;
     outline: 0;
   }
-
+  
   .label__star
   {
     color: #ee0707;
     font-weight: bold;
   }
-
-  #man
+  
+  .man
   {
     margin: 10px 10px 0 0;
   }
-
-  #woman
+  
+  .woman
   {
     margin: 10px 10px 0 40px;
   }
-
+  
   .field__select
   {
     font: 18px/32px "Open Sans", sans-serif;
     color: #333333;
-    width: 540px;
+    width: 100%;
     height: 50px;
     border: 2px solid #c9c9c9;
     border-radius: 3px;
     padding-left: 10px;
   }
-
+  
   .field__select:focus
   {
     border: 3px solid #15a98c;
     outline: 0;
     border-radius: 3px;
   }
-
+  
   .form__field-sex
   {
     margin-top: 41px;
   }
-
+  
   .field-sex__pos
   {
     display: flex;
   }
-
-  .field-sex__pos div
+  
+  .field-sex__pos--div
   {
     font: 18px/32px "Open Sans", sans-serif;
     color: #333333;
     display: flex;
     flex-direction: row;
   }
-
-  #country
+  
+  .country
   {
     appearance: none;
     overflow: hidden;
-    background: url('H:/10_klass/Web/web-development/lw6/img/arrow.png') no-repeat right;
+    background: url('../img/arrow.png') no-repeat right;
   }
-
+  
   .field-comment__input
   {
     font: 18px/32px "Open Sans", sans-serif;
     color: #333333;
     border: 2px solid #c9c9c9;
-    width: 540px;
+    width: 100%;
     height: 150px;
     padding-left: 18px;
     border-radius: 3px;
   }
-
+  
   .form__field-comment
   {
     margin-top: 41px;
   }
-
+  
   .form__btn-container
   {
     display: flex;
     justify-content: flex-start;
     margin-top: 45px;
   }
-
+  
   .btn-container__btn-form
   {
     background-color: #15a98c;
@@ -1184,15 +561,14 @@
     border-radius: 4px;
     width: 220px;
   }
-
+  
   .btn-container__btn-form:hover
   {
     background-color: #109387;
   }
 }
 
-
-@media (max-width: 1239px) and (min-width: 981px)
+@media (min-width: 980px)
 {
   .page-about
   {
@@ -1214,7 +590,7 @@
     display: flex;
     justify-content: flex-start;
     min-width: 960px;
-    margin-left: -25px;
+	flex-direction: row;
   }
 
   .btn-menu
@@ -1239,7 +615,7 @@
   .header__btn-icon--first
   {
     margin-right: 5px;
-    background: url("H:/10_klass/Web/web-development/lw6/img/aboutme_icon1.png") no-repeat;
+    background: url("../img/aboutme_icon1.png") no-repeat;
     width: 20px;
     height: 20px;
   }
@@ -1247,7 +623,7 @@
   .header__btn-icon--second
   {
     margin-right: 5px;
-    background: url("H:/10_klass/Web/web-development/lw6/img/hobby_icon1.png") no-repeat;
+    background: url("../img/hobby_icon1.png") no-repeat;
     width: 20px;
     height: 20px;
   }
@@ -1255,24 +631,24 @@
   .header__btn-icon--third
   {
     margin-right: 5px;
-    background: url("H:/10_klass/Web/web-development/lw6/img/favfilms_icon1.png") no-repeat;
+    background: url("../img/favfilms_icon1.png") no-repeat;
     width: 20px;
     height: 20px;
   }
 
   .btn-menu:hover .header__btn-icon--first
   {
-    background: url("H:/10_klass/Web/web-development/lw6/img/aboutme_icon2.png") no-repeat;
+    background: url("../img/aboutme_icon2.png") no-repeat;
   }
 
   .btn-menu:hover .header__btn-icon--second
   {
-    background: url("H:/10_klass/Web/web-development/lw6/img/hobby_icon2.png") no-repeat;
+    background: url("../img/hobby_icon2.png") no-repeat;
   }
 
   .btn-menu:hover .header__btn-icon--third
   {
-    background: url("H:/10_klass/Web/web-development/lw6/img/favfilms_icon2.png") no-repeat;
+    background: url("../img/favfilms_icon2.png") no-repeat;
   }
 
   .top-image
@@ -1280,7 +656,7 @@
     height: 400px;
     margin: 0 auto;
     overflow: hidden;
-    background: url("H:/10_klass/Web/web-development/lw6/img/top.png") no-repeat;
+    background: url("../img/top.png") no-repeat;
     background-size: cover;
   }
 
@@ -1291,101 +667,119 @@
     justify-content: center;
     padding: 0 20px 40px;
     position: relative;
+	max-width: 100%;
+    flex-direction: column;
   }
-
+  
   .about-me__left-column
   {
-    flex: 0 0 330px;
+    flex: 0;
+	display: flex;
+    flex-direction: row;
+	margin: 0 auto;
   }
-
+  
   .about-me__right-column
   {
     flex: 0 0 600px;
     margin-left: 60px;
+	display: flex;
+    flex-direction: column;
+	width: 100%;
   }
-
+  
   .left-column__logo
   {
     float: right;
     margin-bottom: 50px;
   }
-
+  
   .logo__logo-image
   {
     display: block;
     width: 330px;
     border-radius: 5px;
   }
-
-  .about-me__info-block
+  
+  .left-column__info-block
   {
-    margin-top: 7px;
+    margin: 110px 0 0 30px;
     float: left;
+	display: flex;
+    flex-direction: row;
   }
-
+  
   .info-block__info-point
   {
     margin-bottom: 50px;
+	flex: 1;
   }
-
-  .info-point__info-header
+  
+  .info-point__info-header--first
   {
     color: #15a98b;
     font: 600 24px/24px "Open Sans", sans-serif;
+	margin-top: 20px;
   }
-
+  
+  .info-point__info-header--second
+  {
+    color: #15a98b;
+    font: 600 24px/24px "Open Sans", sans-serif;
+	margin: 20px 0 45px 0;
+  }
+  
   .info-point__info-list
   {
     margin-top: 22px;
     padding-left: 22px;
   }
-
+  
   .info-list__list-element--first
   {
     margin-top: 15px;
     font: 19px "Georgia";
     color: #555555;
   }
-
+  
   .info-list__list-element--second
   {
-    margin: 13px 0 0 -20px;
+    margin: 14px 0 0 -20px;
     font: 19px "Georgia";
     color: #555555;
   }
-
+  
   .info-point__info-list--numbers
   {
     list-style-type: none;
     padding-left: 0;
   }
-
+  
   .right-column__quote-block
   {
-    height: 220px;
-    padding-top: 0;
+    padding: 0 0 25px 0;
   }
-
+  
   .quote-block__blockquote
   {
-    color: #ffffff;
+    color: #555555;
     font: italic 28px/42px "Georgia";
-    padding: 25px 0 0 4px;
+    padding: 10px 0 0 4px;
     width: 90%;
   }
-
+  
   .quote-block__autor
   {
-    color: #f5f5f5;
+    color: #555555;
     margin: 1px 0 0 6px;
     font: 600 16px/42px "Open Sans", sans-serif;
   }
-
+  
   .right-column__text
   {
     margin-top: -18px;
   }
-
+  
   .text__title
   {
     padding-left: 5px;
@@ -1393,7 +787,7 @@
     margin-bottom: 45px;
     font: bold 48px/42px "Open Sans", sans-serif;
   }
-
+  
   .text__title::after
   {
     margin: 30px 0 0 -5px;
@@ -1404,22 +798,22 @@
     border-radius: 3px;
     background-color: #45c3aa;
   }
-
+  
   .text__list-paragraph
   {
     font: 19px/33px "Georgia";
     color: #555555;
-    margin-top: 17px;
+    margin-top: 15px;
     width: 93%;
   }
-
+  
   .text__second-title
   {
     margin: 42px 0 0 0;
     padding-left: 0;
     font: 36px/42px "Open Sans", sans-serif;
   }
-
+  
   .right-column__write-me
   {
     display: inline-block;
@@ -1428,17 +822,17 @@
     color: #15a98b;
     font: 19px "Georgia";
   }
-
+  
   .right-column__write-me:hover
   {
     text-decoration: none;
   }
-
+  
   .right-column__write-me span
   {
     text-decoration: underline;
   }
-
+  
   .right-column__write-me:hover span
   {
     text-decoration: none;
@@ -1455,7 +849,6 @@
   .page-films__container
   {
     width: 1200px;
-    margin-left: -33px;
     margin: 0 auto;
   }
 
@@ -1647,12 +1040,12 @@
     font-weight: bold;
   }
 
-  #man
+  .man
   {
     margin: 10px 10px 0 0;
   }
 
-  #woman
+  .woman
   {
     margin: 10px 10px 0 40px;
   }
@@ -1685,7 +1078,7 @@
     display: flex;
   }
 
-  .field-sex__pos div
+  .field-sex__pos--div
   {
     font: 18px/32px "Open Sans", sans-serif;
     color: #333333;
@@ -1693,11 +1086,11 @@
     flex-direction: row;
   }
 
-  #country
+  .country
   {
     appearance: none;
     overflow: hidden;
-    background: url('H:/10_klass/Web/web-development/lw6/img/arrow.png') no-repeat right;
+    background: url('../img/arrow.png') no-repeat right;
   }
 
   .field-comment__input
@@ -1743,7 +1136,1130 @@
     background-color: #109387;
   }
 }
-/*.rowall {display: flex;flex-flow: wrap;}
-/*.col1, .col2, .col3, .col4 { width: 100%;}
-.col1 {order: 3;} .col2 {order: 2;}
-.col3 {order: 1;} .col4 {order: 0;} */
+}
+
+@media (min-width: 1001px)
+{
+  .page-about
+  {
+    margin: 0 auto;
+  }
+
+  .header
+  {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__list
+  {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    min-width: 960px;
+	flex-direction: row;
+  }
+
+  .btn-menu
+  {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    line-height: 42px;
+    font: 19px "Georgia";
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn-menu:hover
+  {
+    background-color: #15a98c;
+    color: white;
+  }
+
+
+  .header__btn-icon--first
+  {
+    margin-right: 5px;
+    background: url("../img/aboutme_icon1.png") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__btn-icon--second
+  {
+    margin-right: 5px;
+    background: url("../img/hobby_icon1.png") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__btn-icon--third
+  {
+    margin-right: 5px;
+    background: url("../img/favfilms_icon1.png") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn-menu:hover .header__btn-icon--first
+  {
+    background: url("../img/aboutme_icon2.png") no-repeat;
+  }
+
+  .btn-menu:hover .header__btn-icon--second
+  {
+    background: url("../img/hobby_icon2.png") no-repeat;
+  }
+
+  .btn-menu:hover .header__btn-icon--third
+  {
+    background: url("../img/favfilms_icon2.png") no-repeat;
+  }
+
+  .top-image
+  {
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("../img/top.png") no-repeat;
+    background-size: cover;
+  }
+
+  .about-me
+  {
+    margin-top: -190px;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 40px;
+    position: relative;
+    flex-direction: row;
+  }
+  
+  .about-me__left-column
+  {
+    flex: 0 0 330px;
+	display: flex;
+    flex-direction: column;
+	margin: 0;
+  }
+  
+  .about-me__right-column
+  {
+    flex: 0 0 600px;
+    margin-left: 60px;
+	display: flex;
+    flex-direction: row;
+	width: 100%;
+  }
+  
+  .left-column__logo
+  {
+    float: right;
+    margin-bottom: 50px;
+  }
+  
+  .logo__logo-image
+  {
+    display: block;
+    width: 330px;
+    border-radius: 5px;
+  }
+  
+  .left-column__info-block
+  {
+    margin-top: 7px;
+    float: left;
+	display: flex;
+    flex-direction: column;
+  }
+  
+  .info-block__info-point
+  {
+    margin-bottom: 50px;
+  }
+  
+  .info-point__info-header--first
+  {
+    color: #15a98b;
+    font: 600 24px/24px "Open Sans", sans-serif;
+  }
+  
+  .info-point__info-header--second
+  {
+    color: #15a98b;
+    font: 600 24px/24px "Open Sans", sans-serif;
+  }
+  
+  .info-point__info-list
+  {
+    margin-top: 22px;
+    padding-left: 22px;
+  }
+  
+  .info-list__list-element--first
+  {
+    margin-top: 15px;
+    font: 19px "Georgia";
+    color: #555555;
+  }
+  
+  .info-list__list-element--second
+  {
+    margin: 13px 0 0 -20px;
+    font: 19px "Georgia";
+    color: #555555;
+  }
+  
+  .info-point__info-list--numbers
+  {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .right-column__quote-block
+  {
+    height: 220px;
+    padding-top: 0;
+  }
+  
+  .quote-block__blockquote
+  {
+    color: #ffffff;
+    font: italic 28px/42px "Georgia";
+    padding: 25px 0 0 4px;
+    width: 90%;
+  }
+  
+  .quote-block__autor
+  {
+    color: #f5f5f5;
+    margin: 1px 0 0 6px;
+    font: 600 16px/42px "Open Sans", sans-serif;
+  }
+  
+  .right-column__text
+  {
+    margin-top: -18px;
+  }
+  
+  .text__title
+  {
+    padding-left: 5px;
+    color: #333333;
+    margin-bottom: 45px;
+    font: bold 48px/42px "Open Sans", sans-serif;
+  }
+  
+  .text__title::after
+  {
+    margin: 30px 0 0 -5px;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #45c3aa;
+  }
+  
+  .text__list-paragraph
+  {
+    font: 19px/33px "Georgia";
+    color: #555555;
+    margin-top: 15px;
+    width: 93%;
+  }
+  
+  .text__second-title
+  {
+    margin: 42px 0 0 0;
+    padding-left: 0;
+    font: 36px/42px "Open Sans", sans-serif;
+  }
+  
+  .right-column__write-me
+  {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #15a98b;
+    font: 19px "Georgia";
+  }
+  
+  .right-column__write-me:hover
+  {
+    text-decoration: none;
+  }
+  
+  .right-column__write-me span
+  {
+    text-decoration: underline;
+  }
+  
+  .right-column__write-me:hover span
+  {
+    text-decoration: none;
+  }
+
+  .page-films
+  {
+    margin: 16px auto 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-films__container
+  {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .container__title
+  {
+    font: 36px/42px "Open Sans", sans-serif;
+    margin: 36px 0 36px 16%;
+  }
+
+  .container__info-films
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .container__info-films--second
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1;
+    min-width: 70%;
+    margin: 0 auto;
+  }
+
+  .container__info-films--first
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1;
+    min-width: 70%;
+    margin: 0 auto;
+  }
+
+  .info-films__film-point
+  {
+    flex: 1;
+    margin: 0 10px 10px;
+    min-height: 500px;
+    max-width: 300px;
+  }
+
+  .film-point__image
+  {
+    height: 190px;
+    width: 285px;
+    background-position: center center;
+    border-radius: 5px;
+  }
+
+  .film-point__title
+  {
+    margin-top: 25px;
+    font: bold 22px "Open Sans", sans-serif;
+    width: 50%;
+  }
+
+  .film-point__text
+  {
+    margin-top: -4px;
+    font: 16px/28px "Georgia";
+    width: 100%;
+  }
+
+  .container__btn-all-films
+  {
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px 20px 0;
+  }
+
+  .btn-all-films__btn
+  {
+    background-color: #15a98c;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px;
+    padding: 7px 53px;
+    border-radius: 4px;
+  }
+
+  .btn-all-films__btn:hover
+  {
+    background-color: #109387;
+  }
+
+  .btn__text
+  {
+    font: 19px/32px "Georgia";
+    color: white;
+    margin: 0;
+  }
+
+  .page-write-me
+  {
+    margin: 20px auto 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-write-me__block
+  {
+    width: 960px;
+    height: 940px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -25px;
+  }
+
+  .block__header
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 13px;
+  }
+
+  .header__line
+  {
+    width: 200px;
+    border: none;
+    background-color: #c4c4c4;
+    color: #c4c4c4;
+    height: 1px;
+    flex: 0 0 200px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__title
+  {
+    text-transform: uppercase;
+    font: 100 36px/42px "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    flex: 0 0 300px;
+  }
+
+  .block__form
+  {
+    margin-top: 13px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .field__label
+  {
+    display: block;
+    font: 20px/32px "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+
+  .form__field
+  {
+    margin-top: 23px;
+  }
+
+  .field__input
+  {
+    border: 2px solid #c9c9c9;
+    width: 540px;
+    height: 50px;
+    padding-left: 18px;
+    border-radius: 3px;
+  }
+
+  .field__input:focus
+  {
+    border: 3px solid #15a98c;
+    border-radius: 3px;
+    outline: 0;
+  }
+
+  .label__star
+  {
+    color: #ee0707;
+    font-weight: bold;
+  }
+
+  .man
+  {
+    margin: 10px 10px 0 0;
+  }
+
+  .woman
+  {
+    margin: 10px 10px 0 40px;
+  }
+
+  .field__select
+  {
+    font: 18px/32px "Open Sans", sans-serif;
+    color: #333333;
+    width: 540px;
+    height: 50px;
+    border: 2px solid #c9c9c9;
+    border-radius: 3px;
+    padding-left: 10px;
+  }
+
+  .field__select:focus
+  {
+    border: 3px solid #15a98c;
+    outline: 0;
+    border-radius: 3px;
+  }
+
+  .form__field-sex
+  {
+    margin-top: 41px;
+  }
+
+  .field-sex__pos
+  {
+    display: flex;
+  }
+
+  .field-sex__pos--div
+  {
+    font: 18px/32px "Open Sans", sans-serif;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .country
+  {
+    appearance: none;
+    overflow: hidden;
+    background: url('../img/arrow.png') no-repeat right;
+  }
+
+  .field-comment__input
+  {
+    font: 18px/32px "Open Sans", sans-serif;
+    color: #333333;
+    border: 2px solid #c9c9c9;
+    width: 540px;
+    height: 150px;
+    padding-left: 18px;
+    border-radius: 3px;
+  }
+
+  .form__field-comment
+  {
+    margin-top: 41px;
+  }
+
+  .form__btn-container
+  {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 45px;
+  }
+
+  .btn-container__btn-form
+  {
+    background-color: #15a98c;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px;
+    padding: 7px 53px;
+    border-radius: 4px;
+    width: 220px;
+  }
+
+  .btn-container__btn-form:hover
+  {
+    background-color: #109387;
+  }
+}
+
+@media (min-width: 1290px)
+{
+  .page-about
+  {
+    margin: 0 auto;
+  }
+
+  .header
+  {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__list
+  {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    min-width: 960px;
+	flex-direction: row;
+  }
+
+  .btn-menu
+  {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    line-height: 42px;
+    font: 19px "Georgia";
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn-menu:hover
+  {
+    background-color: #15a98c;
+    color: white;
+  }
+
+
+  .header__btn-icon--first
+  {
+    margin-right: 5px;
+    background: url("../img/aboutme_icon1.png") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__btn-icon--second
+  {
+    margin-right: 5px;
+    background: url("../img/hobby_icon1.png") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__btn-icon--third
+  {
+    margin-right: 5px;
+    background: url("../img/favfilms_icon1.png") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn-menu:hover .header__btn-icon--first
+  {
+    background: url("../img/aboutme_icon2.png") no-repeat;
+  }
+
+  .btn-menu:hover .header__btn-icon--second
+  {
+    background: url("../img/hobby_icon2.png") no-repeat;
+  }
+
+  .btn-menu:hover .header__btn-icon--third
+  {
+    background: url("../img/favfilms_icon2.png") no-repeat;
+  }
+
+  .top-image
+  {
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("../img/top.png") no-repeat;
+    background-size: cover;
+  }
+
+  .about-me
+  {
+    margin-top: -190px;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 40px;
+    position: relative;
+    flex-direction: row;
+  }
+  
+  .about-me__left-column
+  {
+    flex: 0 0 330px;
+	display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .about-me__right-column
+  {
+    flex: 0 0 600px;
+    margin-left: 60px;
+	display: flex;
+    flex-direction: column;
+	width: 100%;
+  }
+  
+  .left-column__logo
+  {
+    float: right;
+    margin-bottom: 50px;
+  }
+  
+  .logo__logo-image
+  {
+    display: block;
+    width: 330px;
+    border-radius: 5px;
+  }
+  
+  .left-column__info-block
+  {
+    margin-top: 7px;
+    float: left;
+	display: flex;
+	flex-direction: column;
+	}
+  
+  .info-block__info-point
+  {
+    margin-bottom: 50px;
+  }
+  
+  .info-point__info-header--first
+  {
+    color: #15a98b;
+    font: 600 24px/24px "Open Sans", sans-serif;
+  }
+  
+  .info-point__info-header--second
+  {
+    color: #15a98b;
+    font: 600 24px/24px "Open Sans", sans-serif;
+  }
+  
+  .info-point__info-list
+  {
+    margin-top: 22px;
+    padding-left: 22px;
+  }
+  
+  .info-list__list-element--first
+  {
+    margin-top: 15px;
+    font: 19px "Georgia";
+    color: #555555;
+  }
+  
+  .info-list__list-element--second
+  {
+    margin: 13px 0 0 -20px;
+    font: 19px "Georgia";
+    color: #555555;
+  }
+  
+  .info-point__info-list--numbers
+  {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .right-column__quote-block
+  {
+    height: 220px;
+    padding-top: 0;
+  }
+  
+  .quote-block__blockquote
+  {
+    color: #ffffff;
+    font: italic 28px/42px "Georgia";
+    padding: 25px 0 0 4px;
+    width: 90%;
+  }
+  
+  .quote-block__autor
+  {
+    color: #f5f5f5;
+    margin: 1px 0 0 6px;
+    font: 600 16px/42px "Open Sans", sans-serif;
+  }
+  
+  .right-column__text
+  {
+    margin-top: -18px;
+  }
+  
+  .text__title
+  {
+    padding-left: 5px;
+    color: #333333;
+    margin-bottom: 45px;
+    font: bold 48px/42px "Open Sans", sans-serif;
+  }
+  
+  .text__title::after
+  {
+    margin: 30px 0 0 -5px;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #45c3aa;
+  }
+  
+  .text__list-paragraph
+  {
+    font: 19px/33px "Georgia";
+    color: #555555;
+    margin-top: 15px;
+    width: 93%;
+  }
+  
+  .text__second-title
+  {
+    margin: 42px 0 0 0;
+    padding-left: 0;
+    font: 36px/42px "Open Sans", sans-serif;
+  }
+  
+  .right-column__write-me
+  {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #15a98b;
+    font: 19px "Georgia";
+  }
+  
+  .right-column__write-me:hover
+  {
+    text-decoration: none;
+  }
+  
+  .right-column__write-me span
+  {
+    text-decoration: underline;
+  }
+  
+  .right-column__write-me:hover span
+  {
+    text-decoration: none;
+  }
+
+  .page-films
+  {
+    margin: 16px auto 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-films__container
+  {
+    width: 1200px;
+	margin: 0 auto;
+  }
+
+  .container__title
+  {
+    font: 36px/42px "Open Sans", sans-serif;
+    margin: 36px 10px;
+  }
+
+  .container__info-films
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .container__info-films--second
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-width: auto;
+    flex: 600px 1 1;
+  }
+
+  .container__info-films--first
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-width: auto;
+    flex: 600px 1 1;
+  }
+
+  .info-films__film-point
+  {
+    flex: 1;
+    margin: 0 10px 10px;
+  }
+
+  .film-point__image
+  {
+    height: 190px;
+    width: 285px;
+    background-position: center center;
+    border-radius: 5px;
+  }
+
+  .film-point__title
+  {
+    margin-top: 25px;
+    font: bold 22px "Open Sans", sans-serif;
+    width: 50%;
+  }
+
+  .film-point__text
+  {
+    margin-top: -4px;
+    font: 16px/28px "Georgia";
+    width: 90%;
+  }
+
+  .container__btn-all-films
+  {
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px 20px 0;
+  }
+
+  .btn-all-films__btn
+  {
+    background-color: #15a98c;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px;
+    padding: 7px 53px;
+    border-radius: 4px;
+  }
+
+  .btn-all-films__btn:hover
+  {
+    background-color: #109387;
+  }
+
+  .btn__text
+  {
+    font: 19px/32px "Georgia";
+    color: white;
+    margin: 0;
+  }
+
+  .page-write-me
+  {
+    margin: 20px auto 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-write-me__block
+  {
+    width: 960px;
+    height: 940px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -25px;
+  }
+
+  .block__header
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 13px;
+  }
+
+  .header__line
+  {
+    width: 200px;
+    border: none;
+    background-color: #c4c4c4;
+    color: #c4c4c4;
+    height: 1px;
+    flex: 0 0 200px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__title
+  {
+    text-transform: uppercase;
+    font: 100 36px/42px "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    flex: 0 0 300px;
+  }
+
+  .block__form
+  {
+    margin-top: 13px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .field__label
+  {
+    display: block;
+    font: 20px/32px "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+
+  .form__field
+  {
+    margin-top: 23px;
+  }
+
+  .field__input
+  {
+    border: 2px solid #c9c9c9;
+    width: 540px;
+    height: 50px;
+    padding-left: 18px;
+    border-radius: 3px;
+  }
+
+  .field__input:focus
+  {
+    border: 3px solid #15a98c;
+    border-radius: 3px;
+    outline: 0;
+  }
+
+  .label__star
+  {
+    color: #ee0707;
+    font-weight: bold;
+  }
+
+  .man
+  {
+    margin: 10px 10px 0 0;
+  }
+
+  .woman
+  {
+    margin: 10px 10px 0 40px;
+  }
+
+  .field__select
+  {
+    font: 18px/32px "Open Sans", sans-serif;
+    color: #333333;
+    width: 540px;
+    height: 50px;
+    border: 2px solid #c9c9c9;
+    border-radius: 3px;
+    padding-left: 10px;
+  }
+
+  .field__select:focus
+  {
+    border: 3px solid #15a98c;
+    outline: 0;
+    border-radius: 3px;
+  }
+
+  .form__field-sex
+  {
+    margin-top: 41px;
+  }
+
+  .field-sex__pos
+  {
+    display: flex;
+  }
+
+  .field-sex__pos--div
+  {
+    font: 18px/32px "Open Sans", sans-serif;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .country
+  {
+    appearance: none;
+    overflow: hidden;
+    background: url('../img/arrow.png') no-repeat right;
+  }
+
+  .field-comment__input
+  {
+    font: 18px/32px "Open Sans", sans-serif;
+    color: #333333;
+    border: 2px solid #c9c9c9;
+    width: 540px;
+    height: 150px;
+    padding-left: 18px;
+    border-radius: 3px;
+  }
+
+  .form__field-comment
+  {
+    margin-top: 41px;
+  }
+
+  .form__btn-container
+  {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 45px;
+  }
+
+  .btn-container__btn-form
+  {
+    background-color: #15a98c;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px;
+    padding: 7px 53px;
+    border-radius: 4px;
+    width: 220px;
+  }
+
+  .btn-container__btn-form:hover
+  {
+    background-color: #109387;
+  }
+}
