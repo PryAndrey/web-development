@@ -1235,9 +1235,8 @@
 
   .about-me
   {
-    margin: -190px 0 0 60px;
     display: flex;
-    max-width: 100%;
+    max-width: 900px;
     justify-content: center;
     padding: 0 20px 40px;
     position: relative;
@@ -1727,12 +1726,10 @@
   .header__list
   {
     list-style: none;
-    width: 90%;
     display: flex;
     justify-content: flex-start;
-    min-width: 960px;
+    min-width: 1000px;
 	  flex-direction: row;
-    margin-left: 11%;
   }
 
   .btn-menu
@@ -1806,7 +1803,7 @@
   .about-me
   {
     margin: auto;
-    max-width: 79%;
+    max-width: 900px;
     margin-top: -190px;
     display: flex;
     justify-content: center;
